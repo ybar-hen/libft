@@ -6,8 +6,14 @@
 /*   By: ybar-hen <ybar-hen@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/12/10 04:16:48 by ybar-hen          #+#    #+#             */
-/*   Updated: 2013/12/10 04:17:00 by ybar-hen         ###   ########.fr       */
+/*   Updated: 2013/12/10 04:45:28 by ybar-hen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	ft_lstadd(t_list **alst, t_list *new)
+{
+	new->next = *alst;
+	*alst = new;
+}
